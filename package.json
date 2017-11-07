@@ -2,9 +2,9 @@
   "name": "test-slave",
   "description": "testing-slave-stuff",
   "version": "0.0.1",
-  "main": "bot.js",
+  "main": slave.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node slave.js"
   },
   "dependencies": {
     "discord.js": "11.1.0",
