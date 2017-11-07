@@ -2,7 +2,7 @@
   "name": "test-slave",
   "description": "testing-slave-stuff",
   "version": "0.0.1",
-  "main": slave.js",
+  "main": "slave.js",
   "scripts": {
     "start": "node slave.js"
   },
