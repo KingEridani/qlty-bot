@@ -23,5 +23,10 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!guide') {
+    	message.reply('I can teach you about !weapons !movement !buildtip !raidtypes');
+  	}
+});
 
 client.login(process.env.BOT_TOKEN);
