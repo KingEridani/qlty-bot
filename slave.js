@@ -17,4 +17,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!help') {
+    	message.reply('you may say, !guide, !time(WIP) !raids(WIP) !cw(WIP)');
+  	}
+});
+
+
 client.login(process.env.BOT_TOKEN);
