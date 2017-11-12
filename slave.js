@@ -6,14 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Slave') {
-    	message.reply('Did you call for me Master?');
+    if (message.content === 'fuck') {
+    	message.say('there there Master.');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'slave') {
-    	message.reply('Did you call for me Master?');
+    	message.reply('did you call for me Master?');
   	}
 });
 
@@ -39,7 +39,7 @@ client.on('message', message => {
         
         client.on('message', message => {
     if (message.content === '!machineguns') {
-    	message.reply('machine Guns are the all-rounder weapons, able to pick off weapons at range and viable in close-quarters, these weapons are meant for Front-Line and Flanker combat roles, but may sometimes be see on Support or Artillery weapons as a self defense mechanism. You may say !chord, !vector, !defender, !equilizer, !spectre, !aurora !reaper');
+    	message.reply('machine guns are all-rounder weapons, able to pick off weapons at range and viable in close-quarters, these weapons are meant for Front-Line and Flanker combat roles, but may sometimes be see on Support or Artillery weapons as a self defense mechanism. You may say !chord, !vector, !defender, !equilizer, !spectre, !aurora !reaper');
   	}
 });
   //!chord, !vector, !defender, !equilizer, !spectre, !aurora !reaper'
