@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'fuck') {
-    	message.send('there there Master.');
+    	message.reply('there there Master.');
   	}
 });
 
