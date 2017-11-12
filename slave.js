@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'slave') {
-    	message.say('did you call for me Master?');
+    	message.reply('did you call for me Master?');
   	}
 });
 
