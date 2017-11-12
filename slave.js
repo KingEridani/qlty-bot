@@ -7,13 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'fuck') {
-    	message.say('there there Master.');
+    	message.send('there there Master.');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'slave') {
-    	message.reply('did you call for me Master?');
+    	message.say('did you call for me Master?');
   	}
 });
 
