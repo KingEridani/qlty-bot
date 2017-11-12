@@ -19,16 +19,16 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('you may say, !guide, !time(WIP) !raids(WIP) !cw(WIP)');
+    	message.reply('you may say, !guide, !raids(WIP), !cw(WIP)');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '!guide') {
-    	message.reply('I can teach you about !weapons !movement !combatroles !buildtip !raidtypes');
+    	message.reply('I can teach you about !weapons !movement !combatroles !buildtip(WIP) !raidtypes, !brawltypes');
   	}
 });
-//!weapons- !movement !combatroles !buildtip !raidtypes
+//!weapons- !movement- !combatroles- !buildtip(WIP) !raidtypes !brawltypes
 
     client.on('message', message => {
     if (message.content === '!weapons') {
@@ -87,32 +87,96 @@ client.on('message', message => {
   //!spark, !overheadthingy, !caucus, !firebug, !porcupine. !scorpion'
 
  client.on('message', message => {
-    if (message.content === '!') {
-    	message.reply('');
+    if (message.content === '!movement') {
+    	message.reply('There are three kinds of movement systems. You may say, !wheels, !tracks or !hovers');
+  	}
+});
+  //!wheels, !tracks or !hovers
+
+ client.on('message', message => {
+    if (message.content === '!combatroles') {
+    	message.reply('as a member of QLTY you may have heard us throw around the term Roles, heres what we are talking about. There are five combat roles, which define your responsibility in a match. You may say, !frontline, !flanker, !heavyhitter, !support, !artillery');
+  	}
+});
+  //!frontline, !flanker, !heavyhitter, !support, !artillery
+
+ client.on('message', message => {
+    if (message.content === '!frontline') {
+    	message.reply('the Front-Line role is comparable to "tanks" in other game-genres. Your job is to get to the front of the battle and last. Often you will be slow so consider which side of the battle, offense or defense to commit to after the initial engagement. When building for this role prioritize shielding your weapons and total Cabin structure.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!flanker') {
+    	message.reply('the Flanker role is comparable to "assassins" in other game-genres. You are responsible for creating an impact that must be dealt with on far section or behind enemy lines. You must time your engagement correctly, or be massively overwhelemd by the opposing force. When building for this role prioritize speed and offense, plusses for loadouts good at dueling a single opponent.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!heavyhitter') {
+    	message.reply('the Heavy Hitter role is comparable to "mages" in other game-genres. You are responsible for raw damage output and cabin-destruction. The trick will be not getting focused down while you eliminate targets. When building for this role you should prioritize complimentary gun loadouts and raw damage.');
   	}
 });
   //!
 
  client.on('message', message => {
-    if (message.content === '!') {
-    	message.reply('');
+    if (message.content === '!Artillery') {
+    	message.reply('the Artillery role is comparable to "snipers" in other game-genres. They combine the functions of the Heavy Hitter and Support roles. You are responsible for area-denial and threatening enemies clutching onto cricitcal positions. When building for this role you should prioritize your weapons and mobility. It can often be a good idea to take a secondary weapon for getting you out of sticky situations.');
+  	}
+});
+
+
+ client.on('message', message => {
+    if (message.content === '!support') {
+    	message.reply('the Support role (despite its lack of healing or buffs is comparable to the "supports" from other game-genres. Your job is to reinforce critical areas and pushes with deployables or disabling weapons. The ultimate positioning role, you must be aware of the flow of both teams and lend your aid at the appropriate place and time. When building for this role prioritize sensory equipment, and mobility.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!raidtypes') {
+    	message.reply('there are five types of Raids');
   	}
 });
   //!
 
- client.on('message', message => {
-    if (message.content === '!') {
-    	message.reply('');
-  	}
-});
-  //!
 
  client.on('message', message => {
-    if (message.content === '!') {
-    	message.reply('');
+    if (message.content === '!brawltypes') {
+    	message.reply('brawls are good for farming Scrap fast. There are four regular brawl types with occasional special event brawls added into the mix. Some brawls provide a build while others will use your currently loaded vehicle. The PS of the vehicle is not taken into account for matchmaking in these brawls. You can say, !storm, !ffa, !bbs, !race, !witchhunt');
   	}
 });
-  //!
+  //!storm, !ffa, !bbs, !race, !witchhunt
+
+
+ client.on('message', message => {
+    if (message.content === '!storm') {
+    	message.reply('Storm Warning is a One-Life Free For All. B After 35(?) seconds a red zone will begin enveloping the map. Being in this zone does damage to your vehicle. Best to take your Flanker or Heavy-Hitter builds and attempt to hide from other players until the Storm forces a final confrontation.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!ffa') {
+    	message.reply('Free For All is a Timed Highest Frags Free For All. No holds barred, bring your best bruiser.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!bbs') {
+    	message.reply('blah');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!race') {
+    	message.reply('blah');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!witchhunt') {
+    	message.reply('blah');
+  	}
+});
 
  client.on('message', message => {
     if (message.content === '!') {
