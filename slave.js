@@ -134,19 +134,77 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!raidtypes') {
-    	message.reply('there are five types of Raids');
+    	message.reply('Raids are the only way to earn Copper and Electronics. They come in 3 difficulties and 6 types, with one special Raid that is always available; invasion. You may say, !easy, !medium, !hard, !invasion, !defence, !seige, !convoy, !chase, !cargorace, !heist');
   	}
 });
-  //!
+  //!easy,- !medium,- !hard,- !invasion, !defence, !seige, !convoy, !chase, !cargorace, !heist
 
+ client.on('message', message => {
+    if (message.content === '!easy') {
+    	message.reply('easy raids cost 20 gas. Two are available at each rotation, both rewarding copper. Any build may participate in easy raids and you will only have problems if you are under 2.5k.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!medium') {
+    	message.reply('medium raids cost 40 gas. One is available at each rotation, rewarding copper. Invasion is considered a normal raid for Season purposes, with the same cost and rewards. Medium raids require a PS of 3k, but we recommend 4.5k+.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!hard') {
+    	message.reply('hard raids cost 60 gas. Two are available at each rotation, one rewarding copper, the other being the only source of electronics in the game. Hard raids require a PS of 4k, but we reccomend 6.5k+.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!invasion') {
+    	message.reply('Invasion is a special, medium-only raid that is always available. This is how leviathians are utilized and earn copper.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!defence') {
+    	message.reply('in Defence raids you must protect your teams Pumpjacks. There will be 3 Pumpjacks scattered in random pre-set spawns across the map. Each Pumpjack one by one will be assaulted by enemy raiders, in two waves. Each wave has a count-down clock at the end of which it will spawn that waves enemies around the current pumpjack. Half-way through the timer for the First WAVE of the Second and Third PUMPJACK the new Pumpjack will become active, able to be attacked by enemies. When you kill the LAST ENEMY from the LAST WAVE of a Pumpjack it will deactivate and become invulnerable. Defence is the least punishing raid type in terms of players taking damage, as the enemies will often be firing on the Pumpjack instead of you. Therefore we recommend your most offensive builds. Weapons capable of accurately picking off weapons and quickly destroying enemy cabs should be priortized.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!seige') {
+    	message.reply('in Seige raids you must destroy the enemy teams Pumpjacks. There will be 10 enemy Pumpjacks ');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!convoy') {
+    	message.reply('');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!chase') {
+    	message.reply('');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!cargorace') {
+    	message.reply('');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!heist') {
+    	message.reply('');
+  	}
+});
 
  client.on('message', message => {
     if (message.content === '!brawltypes') {
     	message.reply('brawls are good for farming Scrap fast. There are four regular brawl types with occasional special event brawls added into the mix. Some brawls provide a build while others will use your currently loaded vehicle. The PS of the vehicle is not taken into account for matchmaking in these brawls. You can say, !storm, !ffa, !bbs, !race, !witchhunt');
   	}
 });
-  //!storm, !ffa, !bbs, !race, !witchhunt
-
+  //!storm,- !ffa,- !bbs,- !race,- !witchhunt-
 
  client.on('message', message => {
     if (message.content === '!storm') {
@@ -162,19 +220,19 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!bbs') {
-    	message.reply('blah');
+    	message.reply('Big Black Scorpions is a Timed Highest Frags Free For Fall. A build is provided for you. The Big Black Scorpion build has four boosters aimed straight down to jump/dodge with and of course one Scorpion Relic Weapon. There is a special modifier on the vehicles which prevents the loss of individual parts. The scorpion will be a one-shot kill. This is Crossouts Golden Gun mode.');
   	}
 });
 
  client.on('message', message => {
     if (message.content === '!race') {
-    	message.reply('blah');
+    	message.reply('Race has special objectives called Gates. There are a handful of Gates spread throughout the map, which must be driven through sequentially to complete a lap. First player to complete the third lap wins.');
   	}
 });
 
  client.on('message', message => {
     if (message.content === '!witchhunt') {
-    	message.reply('blah');
+    	message.reply('Witch Hunt has a special objective, the Balloons or sometimes called the Ball. The Ball is picked up by driving onto it at the start, or by coming into contact (forcibly or not) with the current holder of the ball. The first player to have held the ball for a total of 100 seconds wins the match.');
   	}
 });
 
