@@ -1,7 +1,7 @@
 {
-  "name": "test-slave",
-  "description": "testing-slave-stuff",
-  "version": "0.0.1",
+  "name": "QLTY-slave",
+  "description": "gives-us-knowledge",
+  "version": "0.1.0",
   "main": "slave.js",
   "scripts": {
     "start": "node slave.js"

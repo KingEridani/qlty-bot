@@ -1,1 +1,1 @@
-slaver: node main.js
+slaver: node slave.js
