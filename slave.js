@@ -18,6 +18,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!gotoworkforme') {
+    	message.reply('I already work for you.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!howtowinagainstslowfragzinstormwarning') {
     	message.reply('"foolish him by make him fight everyone and not you." Good Luck with that.');
   	}
