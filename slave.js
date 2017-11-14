@@ -28,7 +28,7 @@ client.on('message', message => {
     	message.reply('I can teach you about !weapons !movement !combatroles !buildtip(WIP) !maps(WIP) !missiontypes !raidtypes, !brawltypes');
   	}
 });
-//!weapons- !movement- !combatroles- !raidtypes- !brawltypes- !maps !missiontypes !buildtip 
+//!weapons- !movement- !combatroles- !raidtypes- !brawltypes- !maps !missiontypes- !buildtip 
 
     client.on('message', message => {
     if (message.content === '!weapons') {
@@ -135,7 +135,7 @@ client.on('message', message => {
     	message.reply('There are currently two types of missions in the game, each map featuring one type of mission. In either type you can win by achieving the Capture Zone objective, killing the entire enemy team. Ties at the end of the timer are determined by mission type. You can say !basezone or !centerzone.');
   	}
 });
-  //!basezone, !centerzone
+  //!basezone,- !centerzone-
 
  client.on('message', message => {
     if (message.content === '!basezone') {
@@ -209,14 +209,14 @@ client.on('message', message => {
     	message.reply('in Cargo Race raids you must collect all Cargo under a refillable timer. If the timer runs out you will lose the raid; killing raiders and collecting Cargo will increase the time you have remaining. There will be 10 Cargo zones scattered througout the map randomly in one of two preset-configurations. Each Cargo has a small zone around it [approximately 1 carlength in radius] that must be occupied for 5 seconds. When the Cargo is captured it dissapears. For information on the mechanics of capturing type !centerzone. At the start and each time a Cargo is captured Raiders will spawn at the location of the NEXT Cargo, in increasing amounts. In Cargo Race a balance of speed and killing power must be maintained; if you are too fast there may end up being too many Raiders to survive the 5+ seconds to capture the final cargo but if you go out of your way to kill raiders you risk running out of time now. Suggested weapons are shotguns, machine guns, unguided rockets, buggy and fly drones.');
   	}
 });
-//!centerzone
+//!centerzone-
 
  client.on('message', message => {
     if (message.content === '!heist') {
     	message.reply('in Heist raids you must collect the Cargo and deliver to the Finish Line under a set timer. If the timer runs out you will lose the raid. The cargo spawns not far from the players and must be captured by standing in its capture zone for 10 seconds. For information on the mechanics of capturing type !centerzone. The player who captures the Cargo has weight added directly to their cabin, possibly slowing the vehicle. This player then must traverse the length of the map to enter the Finish Line zone, immediately upon which you win the Raid. Heist is a great raid type for farming kills in, as you are often provided ample time to deliver the package. We recommend medium-weight edging on speed if queuing alone, or a designated player with such a build to be the ball carrier in your group. The rest can build offensively. Suggested weapons are shotguns, machineguns, unguided rockets, deployables.');
   	}
 });
-//!centerzone
+//!centerzone-
 
  client.on('message', message => {
     if (message.content === '!brawltypes') {
