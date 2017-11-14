@@ -18,6 +18,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!slave') {
+    	message.reply('that is me. At the moment I can provide you a guide to crossout. To get started say !guide.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!help') {
     	message.reply('you may say, !guide, !raids(WIP), !cw(WIP)');
   	}
