@@ -12,6 +12,24 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!landlesshastoomuchfreetime') {
+    	message.reply('you are correct, he does.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!pizza') {
+    	message.reply('I have informed Alexa of your request.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!thinkyouaresmarterthanme') {
+    	message.reply('I do no think, I only know and operate. My calculations indicate positive.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'slave') {
     	message.reply('did you call for me Master?');
   	}
