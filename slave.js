@@ -227,7 +227,7 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!storm') {
-    	message.reply('Storm Warning is a One-Life Free For All. B After 35(?) seconds a red zone will begin enveloping the map. Being in this zone does damage to your vehicle. Best to take your Flanker or Heavy-Hitter builds and attempt to hide from other players until the Storm forces a final confrontation.');
+    	message.reply('Storm Warning is a One-Life Free For All. B After 30 seconds a red zone will begin enveloping the map. Being in this zone does damage to your vehicle. Best to take your Flanker or Heavy-Hitter builds and attempt to hide from other players until the Storm forces a final confrontation.');
   	}
 });
 
