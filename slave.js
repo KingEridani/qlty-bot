@@ -12,6 +12,18 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!utellme') {
+    	message.reply('yes, I am telling you.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!howtowinagainstslowfragzinstormwarning') {
+    	message.reply('"foolish him by make him fight everyone and not you." Good Luck with that.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!landlesshastoomuchfreetime') {
     	message.reply('you are correct, he does.');
   	}
