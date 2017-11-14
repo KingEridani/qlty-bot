@@ -12,6 +12,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!potato') {
+    	message.reply('potatoes are a starchy gourd often harvested for food. The flesh of a potato bulb contains enough latent biological interaction to draw utilizable electricty from. Therefore the best use for potatoes is clocks. Potatoe is also a term for a useless sack of a player who is not contributing to their team. If spotted halt all activity and prepare to boil, mash and stick them into a stew.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!utellme') {
     	message.reply('yes, I am telling you.');
   	}
