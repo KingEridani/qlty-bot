@@ -12,6 +12,43 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!noob') {
+    	message.reply('beginning players who may be EAGER to learn the game.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!eager') {
+    	message.reply('adjevtive, (of a person) wanting to do or have something very much.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!goombah') {
+    	message.reply('Stomp!.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!cancer') {
+    	message.reply('a term referring to an in-meta loadout that is either too easy to use or too widespread in its use. In Crossout it has referred to Frame-builds, Caucuses and Sidekick [buggy] Drones.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'damn') {
+    	message.reply('there there Master.');
+  	}
+});
+
+
+client.on('message', message => {
+    if (message.content === '!gaijin') {
+    	message.reply('they are the developer of Crossout.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!potato') {
     	message.reply('potatoes are a starchy gourd often harvested for food. The flesh of a potato bulb contains enough latent biological interaction to draw utilizable electricty from. Therefore the best use for potatoes is clocks. Potatoe is also a term for a useless sack of a player who is not contributing to their team. If spotted halt all activity and prepare to boil, mash and stick them into a stew.');
   	}
