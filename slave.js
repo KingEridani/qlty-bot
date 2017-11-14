@@ -36,6 +36,24 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!salty') {
+    	message.reply('QLTY chefs recommend savory products like beef, broths and dark breads to pair with your salt.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!umad?') {
+    	message.reply('I have no emotions. I appreciate Masters consideration for my well being!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!salt') {
+    	message.reply('Sodium Chloride being the most common type. There exist many other Sodium [artifical and natural] products that have similar interactions and characteristics to "Table Salt."');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!landlesshastoomuchfreetime') {
     	message.reply('you are correct, he does.');
   	}
