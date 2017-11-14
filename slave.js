@@ -25,10 +25,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!guide') {
-    	message.reply('I can teach you about !weapons !movement !combatroles !buildtip(WIP) !raidtypes, !brawltypes');
+    	message.reply('I can teach you about !weapons !movement !combatroles !buildtip(WIP) !maps(WIP) !missiontypes !raidtypes, !brawltypes');
   	}
 });
-//!weapons- !movement- !combatroles- !buildtip(WIP) !raidtypes !brawltypes
+//!weapons- !movement- !combatroles- !raidtypes- !brawltypes- !maps !missiontypes !buildtip 
 
     client.on('message', message => {
     if (message.content === '!weapons') {
@@ -117,7 +117,6 @@ client.on('message', message => {
     	message.reply('the Heavy Hitter role is comparable to "mages" in other game-genres. You are responsible for raw damage output and cabin-destruction. The trick will be not getting focused down while you eliminate targets. When building for this role you should prioritize complimentary gun loadouts and raw damage.');
   	}
 });
-  //!
 
  client.on('message', message => {
     if (message.content === '!Artillery') {
@@ -125,10 +124,28 @@ client.on('message', message => {
   	}
 });
 
-
  client.on('message', message => {
     if (message.content === '!support') {
     	message.reply('the Support role (despite its lack of healing or buffs is comparable to the "supports" from other game-genres. Your job is to reinforce critical areas and pushes with deployables or disabling weapons. The ultimate positioning role, you must be aware of the flow of both teams and lend your aid at the appropriate place and time. When building for this role prioritize sensory equipment, and mobility.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!missiontypes') {
+    	message.reply('There are currently two types of missions in the game, each map featuring one type of mission. In either type you can win by achieving the Capture Zone objective, killing the entire enemy team. Ties at the end of the timer are determined by mission type. You can say !basezone or !centerzone.');
+  	}
+});
+  //!basezone, !centerzone
+
+ client.on('message', message => {
+    if (message.content === '!basezone') {
+    	message.reply('in "Base Zone" missions each team has a capture zone at their spawn location, on the opposite side of the map from the enemies. When capturing a zone each player in the zone [regardless of activity] UP TO THREE enemy players increases the rate at which the capture bar fills. The capture bar has three segments. The bar depletes if there are no enemy players in the zone, down to the last segment captured. At the timer end the team with the most capture bar segments wins, if the teams are still tied the team with the most players wins.');
+  	}
+});
+
+ client.on('message', message => {
+    if (message.content === '!centerzone') {
+    	message.reply('in "Center Zone" missions there is one central capture zone which both teams strive to control. All Raid capture zones work in a similar manner to the Central Capture zone. When the zone is unnocpied it turns gray and can be called neutral. When the first vehicle from a team enters the zone that team is capturing it. [Blue for allies, red for enemies.] Any member of the capturing team who enters the zone starts an upward counting timer "attached" to them. The highest timer among allied players on the zone is shown at the top and must reach 100. If you drive off the zone, your entire timer is lost. If you drive off the zone and you were the only member of your team left, it will revert to neutral or if enemies be present turn red. If a member of the non-capturing team enters the zone during a capture they will halt all timers until there are no more opposing players on the zone. In the case of a tie the capture progress does not matter, only which team has more players left.');
   	}
 });
 
@@ -159,7 +176,7 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!invasion') {
-    	message.reply('Invasion is a special, medium-only raid that is always available. This is how leviathians are utilized and earn copper.');
+    	message.reply('Invasion is a special, medium-only raid that is always available. This is how Leviathans are utilized and earn copper. In Invasion raids you allegedly defend your teams Pumpjacks under a set timer. If the timer runs out you lose the raid. The actual much harder task is that unlike !defence raids your Pumpjacks are assailed by a player-built Leviathan 3 of which must be destroyed before your brief time is over. Each wave is a new leviathan with 2 Raiders against a new Pumpjack. This raid should only be completed for fun and we recommend builds of 10k+ only. Take cannons, rockets, mandrake.');
   	}
 });
 
@@ -171,33 +188,35 @@ client.on('message', message => {
 
  client.on('message', message => {
     if (message.content === '!seige') {
-    	message.reply('in Seige raids you must destroy the enemy teams Pumpjacks. There will be 10 enemy Pumpjacks ');
+    	message.reply('in Seige raids you must destroy the enemy teams Pumpjacks under a refillable timer. If the timer runs out you will lose the game; killing raiders and destroying Pumpjacks will increase the time you have remaining. There will be 10 enemy Pumpjacks scattered throughout the map in randomly in one of two pre-set configurations. Each enemy Pumpjack has 2-4 weapons systems [per difficulty] which may be shot off to do significant damage to the Pumpjack. Raiders will spawn at the start and each time an enemy Pumpjack is destroyed. Seige dictate specific weapons that are useful against the enemy Pumpjacks. Take builds with Autocannons, Cannons, any Rockets, or the Mandrake.');
   	}
 });
 
  client.on('message', message => {
     if (message.content === '!convoy') {
-    	message.reply('');
+    	message.reply('in Convoy raids you must protect your teams Truck. The Truck has no weapons systems and will drive from point A to point B on a special Convoy/Chase map. The speed of the Truck is determined by the proximity of players to the Truck. Raiders spawn just ahead of the Trucks path once the TRUCK enters a predfined spawn zone. Convoy is uniquely longer than other raids and provides additional rewards. We recommend striking a balance between mobility and structure. For weapons avoid anything front-ended to avoid ardous turning about to clear stragglers.');
   	}
 });
 
  client.on('message', message => {
     if (message.content === '!chase') {
-    	message.reply('');
+    	message.reply('in Chase raids you must destroy the enemy teams Trucks. The enemies convoy group consists of Two Trucks and four Guard-Cars, marching truck-guard-guard repeat. The enemy convoy group will drive from point A a to Point B at a constant speed on a special Convoy/Chase map. The Truck has an array of weapons, most notably auto-cannons or reapers on the sides and porcupine minelayers on the back. The Trucks weapons have a "cooldown" phase, where their weapons deactivate [does NOT affect the Guard-Cars]. It is quite punishing to attack the Trucks while their weapons are up, so we recommend tough bruisers with just enough speed to catch the Trucks or the longer range options. Use Autocannons, Cannons, any Rockets, or the Mandrake.');
   	}
 });
 
  client.on('message', message => {
     if (message.content === '!cargorace') {
-    	message.reply('');
+    	message.reply('in Cargo Race raids you must collect all Cargo under a refillable timer. If the timer runs out you will lose the raid; killing raiders and collecting Cargo will increase the time you have remaining. There will be 10 Cargo zones scattered througout the map randomly in one of two preset-configurations. Each Cargo has a small zone around it [approximately 1 carlength in radius] that must be occupied for 5 seconds. When the Cargo is captured it dissapears. For information on the mechanics of capturing type !centerzone. At the start and each time a Cargo is captured Raiders will spawn at the location of the NEXT Cargo, in increasing amounts. In Cargo Race a balance of speed and killing power must be maintained; if you are too fast there may end up being too many Raiders to survive the 5+ seconds to capture the final cargo but if you go out of your way to kill raiders you risk running out of time now. Suggested weapons are shotguns, machine guns, unguided rockets, buggy and fly drones.');
   	}
 });
+//!centerzone
 
  client.on('message', message => {
     if (message.content === '!heist') {
-    	message.reply('');
+    	message.reply('in Heist raids you must collect the Cargo and deliver to the Finish Line under a set timer. If the timer runs out you will lose the raid. The cargo spawns not far from the players and must be captured by standing in its capture zone for 10 seconds. For information on the mechanics of capturing type !centerzone. The player who captures the Cargo has weight added directly to their cabin, possibly slowing the vehicle. This player then must traverse the length of the map to enter the Finish Line zone, immediately upon which you win the Raid. Heist is a great raid type for farming kills in, as you are often provided ample time to deliver the package. We recommend medium-weight edging on speed if queuing alone, or a designated player with such a build to be the ball carrier in your group. The rest can build offensively. Suggested weapons are shotguns, machineguns, unguided rockets, deployables.');
   	}
 });
+//!centerzone
 
  client.on('message', message => {
     if (message.content === '!brawltypes') {
