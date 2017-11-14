@@ -18,6 +18,18 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!spudgun') {
+    	message.reply('a weapon that Gaijin keeps pushing back the release date of. After numerous reworks leaking over the year and a half of delays it has been speculated that the spudgun will be a Legendary or Relic tier Grenade Launcher, possibly an entirely new class of weapons. All leaked footage has since been deleted but reports of witnesses leave no second guessing to the devestating power of this weapon.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!beta') {
+    	message.reply('What Crossout will be forever. Also a pretty fish.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!eager') {
     	message.reply('adjevtive, (of a person) wanting to do or have something very much.');
   	}
@@ -50,7 +62,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!potato') {
-    	message.reply('potatoes are a starchy gourd often harvested for food. The flesh of a potato bulb contains enough latent biological interaction to draw utilizable electricty from. Therefore the best use for potatoes is clocks. Potatoe is also a term for a useless sack of a player who is not contributing to their team. If spotted halt all activity and prepare to boil, mash and stick them into a stew.');
+    	message.reply('potatoes are a starchy gourd often harvested for food. The flesh of a potato bulb contains enough latent biological interaction to draw utilizable electricty from. Sometimes called spuds. Potatoes can be a lethal projectile if combined with PVC and PBR. Potato is also a term for a useless sack of a player who is not contributing to their team. If spotted halt all activity and prepare to boil, mash and stick them into a stew.');
   	}
 });
 
