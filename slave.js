@@ -12,6 +12,67 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!apples') {
+    	message.reply('I prefer oranges.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!oranges') {
+    	message.reply('I prefer violets.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!violets') {
+    	message.reply('I prefer dandies.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!dandies') {
+    	message.reply('I prefer fags.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!fags') {
+    	message.reply('I prefer cigarettes.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!cigarettes') {
+    	message.reply('I prefer joints.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!joints') {
+    	message.reply('I prefer bones.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!bones') {
+    	message.reply('I prefer coves.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!coves') {
+    	message.reply('was that last one too subtle for you? No? Oh okay. Well good job. I prefer not to keep writing these.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!landlessgentry') {
+    	message.reply('author of this lowly servant, Master.');
+  	}
+});
+
+
+client.on('message', message => {
     if (message.content === '!noob') {
     	message.reply('beginning players who may be EAGER to learn the game.');
   	}
@@ -31,7 +92,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!eager') {
-    	message.reply('adjevtive, (of a person) wanting to do or have something very much.');
+    	message.reply('adjevtive, (of a person) wanting to do or have something very much. https://youtu.be/LkCNJRfSZBU?t=1m23s');
   	}
 });
 
